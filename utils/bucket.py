@@ -1,11 +1,5 @@
-import os
-import zipfile
-import tempfile
 from google.cloud import storage
 from google.api_core.exceptions import GoogleAPIError
-import pandas as pd
-import pyarrow.parquet as pq
-import pyarrow as pa
 
 class GCSBucket:
     def __init__(self, bucket_name: str = "hc-bucket-404notfound"):
